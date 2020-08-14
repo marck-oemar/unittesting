@@ -1,6 +1,7 @@
 # Unit testing Powershell scripts with Pester
 
 [Pester](https://pester.dev) is the ubiquitous test and mock framework for PowerShell.
+
 Pester provides a framework for running Unit Tests to execute and validate PowerShell commands. Pester follows a file naming convention for naming tests to be discovered by pester at test time and a simple set of functions that expose a Testing DSL for isolating, running, evaluating and reporting the results of PowerShell commands.
 
 
@@ -16,6 +17,7 @@ Import-Module Pester
 
 ## Tests
 There are 2 example Powershell scripts and for each there is a Pseter test file that has certain assertions defined.
+
 Pay attention to example2 which has mocking involved. (https://martinfowler.com/bliki/TestDouble.html)
 
 To execute the tests simply invoke Pester in the container:
