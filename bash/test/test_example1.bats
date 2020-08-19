@@ -13,6 +13,11 @@ setup() {
   [ "$status" -eq 1 ]  
 }
 
+@test "func1 function should return 2" {
+  source /code/example1.sh
+  run func1
+  [ "$status" -eq 2 ]  
+}
 
 @test "func2 function should create config file is grass is green" {
   source example1.sh
